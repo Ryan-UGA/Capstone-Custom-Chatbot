@@ -3,7 +3,7 @@
 ## Project Overview (data warehouse and data lake table in appendix here as well)
 * PROBLEM: Information is often scattered across data sources, making it time-consuming and difficult for users manually searching for information.
 * SOLUTION: Users can quickly retrieve needed information; users prompt this chatbot that responds with information and a link where the information was found.
-* DESCRIPTION: This web application serves as an interface hosting a LLM (Large Language Model) that utilizes RAG (Retrieval Augmented Generation)[https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview?tabs=docs]. (The Azure OpenAI service)[https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search] used the gpt-4o model and references an Azure Search Index storing normalized data from a variety of sources.
+* DESCRIPTION: This web application serves as an interface hosting a LLM (Large Language Model) that utilizes RAG [Retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview?tabs=docs). [The Azure OpenAI service](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) used the gpt-4o model and references an Azure Search Index storing normalized data from a variety of sources.
 
 
 ## Project Phases
