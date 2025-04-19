@@ -4,17 +4,18 @@
 ### PROBLEM
 Information is often scattered across data sources, making it time-consuming and difficult for users manually searching for information.
 ### SOLUTION
-Users can quickly retrieve needed information; users prompt this chatbot that responds with information and a link where the information was found.
+Users can quickly retrieve needed information; users prompt this chatbot which responds with information and a citation - where the information originated from. It provides a URL and article title for the HTML-scraped JSON files; if there is no link (i.e. structured data in SQL query), then all data tied to the observation in the search index is provided as the citation.
 ### Microsoft Software Involved
 This web application serves as an interface hosting a LLM (Large Language Model) that utilizes RAG or [Retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview?tabs=docs). [The Azure OpenAI service](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) used the gpt-4o model and references an Azure Search Index storing normalized data from a variety of sources.
 
-The picture below diagrams the software involved. This repository currently has the webapp, Azure OpenAI gpt-4o model, Azure AI Search Index, and Azure CosmosDB (for chat history), but feel free to look at the Microsoft repository named [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT) for more software and information.
+The picture below diagrams the software involved. This repository currently has the webapp, Azure OpenAI gpt-4o model, Azure AI Search Index, and Azure CosmosDB (for chat history), but feel free to look at the Microsoft repository named [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT) for more information and potentialy software to include.
+
 ![image](https://github.com/user-attachments/assets/54764883-d5ef-4bad-8ea8-c3c255b088da)
-
-
 
 ## Project Phases
 ![image](https://github.com/user-attachments/assets/95d544c2-ed0d-4cee-8eab-41635c6c6597)
+
+We did not have time to tune the LLM (by adjusting environment variables found in the Microsoft repo), but everything else was completed within a few months.
 
 ## Directories
 ### get_data_create_azure_index (original code)
@@ -26,7 +27,7 @@ Clean, extract, and normalize the data from a data lake ((Azure Storage Explorer
 Normalize and index the data to enable efficient RAG (better data quality = better chatbot results).
 
 ### sample-app-aoai-chatGPT
-The web app was originally cloned from this Microsoft github repo called [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT). I then integrated the 
+The web app was originally cloned from this Microsoft github repo called [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT). I then integrated keys, endpoints, and other necessary information found in the repo. My .env file has what variables I used (and read technical details for information on those variables), but feel free to add more from the .env.sample file in the Microsoft repo.
 
 ## Capstone Contributors
 
