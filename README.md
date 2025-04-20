@@ -1,6 +1,6 @@
 # Capstone Internal Chatbot Referencing an Azure Search Index
 
-## Project Overview (data warehouse and data lake table in appendix here as well)
+## Project Overview
 ### PROBLEM
 Information is often scattered across data sources, making it time-consuming and difficult for users manually searching for information.
 ### SOLUTION
