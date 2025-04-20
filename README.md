@@ -46,7 +46,7 @@ The web app was originally cloned from this Microsoft github repo called [sample
 * Nate Moore [@NateM2025](https://github.com/NateM2025)
 * Katie Gerrick
 * Graham Luckey
-* Destinee Pruden
+* Destinee Pruden [@DPRUDEN25](https://github.com/DPRUDEN25)
 
 ## Technical Details
 
