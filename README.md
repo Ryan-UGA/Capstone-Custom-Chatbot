@@ -8,14 +8,23 @@ Users can quickly retrieve needed information; users prompt this chatbot which r
 ### Software Involved
 This web application serves as an interface hosting a LLM (Large Language Model) that utilizes RAG or [Retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview?tabs=docs). [The Azure OpenAI service](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) used the gpt-4o model and references an Azure Search Index storing normalized data from a variety of sources.
 
-The picture below diagrams the software involved. The Python involved the data processing pipelines in the get_data_create_azure_index directory explained later. The sample-app-aoai-chatGPT directory currently has the webapp, Azure OpenAI gpt-4o model, Azure AI Search Index, and Azure CosmosDB (for chat history), but feel free to look at the Microsoft repository named [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT) for more information and potential software to include.
+The picture below diagrams the software involved. The Python diagrammed is the data processing pipelines in the get_data_create_azure_index directory explained later. The sample-app-aoai-chatGPT directory currently has the webapp, Azure OpenAI gpt-4o model, Azure AI Search Index, and Azure CosmosDB (for chat history), but feel free to look at the Microsoft repository named [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT) for more information and potential software to include.
 
 ![image](https://github.com/user-attachments/assets/54764883-d5ef-4bad-8ea8-c3c255b088da)
+
+* Azure AI Search Index: stored cleaned, extracted, and normalized batches of data which enables efficient RAG
+* Azure Open AI: deployed the gpt-4o model
+* Azure CosmosDB: stored users' chat history with the web app
+* Application Insights (not included now, but could be added later): Application Performance Management (APM) for live web apps
+* Key Vault (not included now, but could be added later): stores important information such as keys and endpoints in this project
+
+![image](https://github.com/user-attachments/assets/6a36ca9b-3817-4270-9cfe-ead5fd9f03af)
+
 
 ## Project Phases
 ![image](https://github.com/user-attachments/assets/95d544c2-ed0d-4cee-8eab-41635c6c6597)
 
-We did not have time to tune the LLM (by adjusting environment variables like temperature found in the Microsoft repo), but everything else was completed within a few months.
+We did not have time to tune the LLM, but everything else was completed within a few months.
 
 ## Directories
 ### get_data_create_azure_index (original code)
@@ -30,7 +39,12 @@ Normalize and index the data to enable efficient RAG (better data quality = bett
 The web app was originally cloned from this Microsoft github repo called [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT). I then integrated keys, endpoints, and other necessary information found in the repo. My .env file has what variables I used (and read technical details for information on those variables), but feel free to add more from the .env.sample file in the Microsoft repo.
 
 ## Capstone Contributors
-1. Ryan Cullen [@Ryan-UGA](https://github.com/Ryan-UGA)
+* Ryan Cullen [@Ryan-UGA](https://github.com/Ryan-UGA)
+* Fan Yuan [@Fan36466](https://github.com/Fan36466)
+* Nate Moore [@NateM2025](https://github.com/NateM2025)
+* Katie Gerrick
+* Graham Luckey
+* Destinee Pruden
 
 ## Technical Details
 
