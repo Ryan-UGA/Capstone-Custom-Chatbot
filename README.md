@@ -5,7 +5,7 @@
 Information is often scattered across data sources, making it time-consuming and difficult for users manually searching for information.
 ### SOLUTION
 Users can quickly retrieve needed information; users prompt this chatbot which responds with information and a citation - where the information originated from. It provides a URL and article title for the HTML-scraped JSON files; if there is no link (i.e. structured data in SQL query), then all data tied to the observation in the search index is provided as the citation.
-### Microsoft Software Involved
+### Software Involved
 This web application serves as an interface hosting a LLM (Large Language Model) that utilizes RAG or [Retrieval Augmented Generation](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview?tabs=docs). [The Azure OpenAI service](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) used the gpt-4o model and references an Azure Search Index storing normalized data from a variety of sources.
 
 The picture below diagrams the software involved. The Python involved the data processing pipelines in the get_data_create_azure_index directory explained later. The sample-app-aoai-chatGPT directory currently has the webapp, Azure OpenAI gpt-4o model, Azure AI Search Index, and Azure CosmosDB (for chat history), but feel free to look at the Microsoft repository named [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT) for more information and potential software to include.
@@ -30,6 +30,7 @@ Normalize and index the data to enable efficient RAG (better data quality = bett
 The web app was originally cloned from this Microsoft github repo called [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT). I then integrated keys, endpoints, and other necessary information found in the repo. My .env file has what variables I used (and read technical details for information on those variables), but feel free to add more from the .env.sample file in the Microsoft repo.
 
 ## Capstone Contributors
+1. Ryan Cullen [@javaprogrammer2023](https://github.com/Javaprogrammer2023/MIST4610-Project1)
 
 ## Technical Details
 
