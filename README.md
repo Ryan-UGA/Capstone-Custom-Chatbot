@@ -56,14 +56,14 @@ The web app was originally cloned from this Microsoft github repo called [sample
 ![image](https://github.com/user-attachments/assets/96226978-09bd-46c3-9fae-afcc7309e9f9)
 
 * Have [Python](https://www.python.org/) and [git](https://git-scm.com/downloads/win) installed (I installed the latest 64-bit version of Git for Windows).
-* Command prompt: cd absolute/path/to/directory/storing/code
-* Command prompt: git clone https://github.com/microsoft/sample-app-aoai-chatGPT.git
+* Command prompt (change directory): cd absolute/path/to/directory/storing/code
+* Command prompt (getting code from git): git clone https://github.com/microsoft/sample-app-aoai-chatGPT.git
 * Have a .env file (look at next section): AUTH_ENABLED = “False” right now, but definitely add authentication to the app when put into production (look at Microsoft repo for Authentication information).
 * Download [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/), run the .exe file, and add the individual components in the picture below (Windows 10 or 11 is fine depending on your computer).
 ![image](https://github.com/user-attachments/assets/4c189735-b4d9-45e0-8fa2-f391c102bd50)
 
 * Download [Node.js with NPM](https://nodejs.org/en/download/) (Windows Installer (.msi) for the prebuilt Node.js for Windows running a x64 architecture with NPM)
-* Terminal (I used VS Code): pip install -r requirements.txt
+* Terminal (used VS Code): pip install -r requirements.txt
 * Terminal: python -m pip install –upgrade python-certifi-win32
 * Terminal: set PYTHONHTTPSVERIFY=0
 
