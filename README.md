@@ -38,7 +38,7 @@ Clean, extract, and normalize the data from a data lake and data warehouse
 Normalize and index the data to enable efficient RAG (better data quality = better chatbot results).
 
 ### sample-app-aoai-chatGPT
-The web app was originally cloned from this Microsoft github repo called [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT) and then integrated keys, endpoints, and other necessary information found in the repo in a .env file created after git clone ... (read technical details -> environment variables section later).
+The web app was originally cloned from this Microsoft github repo called [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT) and then integrated keys, endpoints, and other necessary information found in the repo in the .env file (read technical details -> environment variables section later).
 
 ## Capstone Contributors
 * Ryan Cullen [@Ryan-UGA](https://github.com/Ryan-UGA)
@@ -58,7 +58,7 @@ The web app was originally cloned from this Microsoft github repo called [sample
 * Have [Python](https://www.python.org/) and [git](https://git-scm.com/downloads/win) installed (I installed the latest 64-bit version of Git for Windows).
 * Command prompt (change directory): cd absolute/path/to/directory/storing/code
 * Command prompt (getting code from git): git clone https://github.com/microsoft/sample-app-aoai-chatGPT.git
-* Create a .env file in same directory as .env.sample (look at next section): AUTH_ENABLED = “False” right now, but definitely add authentication to the app when put into production (look at Microsoft repo for Authentication information).
+* Edit the .env file in same directory as .env.sample (look at next section): AUTH_ENABLED = “False” right now, but definitely add authentication to the app when put into production (look at Microsoft repo for Authentication information).
 * Download [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/), run the .exe file, and add the individual components in the picture below (Windows 10 or 11 is fine depending on your computer).
 ![image](https://github.com/user-attachments/assets/4c189735-b4d9-45e0-8fa2-f391c102bd50)
 
