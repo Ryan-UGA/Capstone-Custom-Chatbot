@@ -30,7 +30,7 @@ Normalize and index the data to enable efficient RAG (better data quality = bett
 The web app was originally cloned from this Microsoft github repo called [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT). I then integrated keys, endpoints, and other necessary information found in the repo. My .env file has what variables I used (and read technical details for information on those variables), but feel free to add more from the .env.sample file in the Microsoft repo.
 
 ## Capstone Contributors
-1. Ryan Cullen [@javaprogrammer2023](https://github.com/Javaprogrammer2023/MIST4610-Project1)
+1. Ryan Cullen [@Ryan-UGA](https://github.com/Ryan-UGA)
 
 ## Technical Details
 
