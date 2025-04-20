@@ -18,9 +18,6 @@ The picture below diagrams the software involved. The Python diagrammed is the d
 * Application Insights (not included now, but could be added later): Application Performance Management (APM) for live web apps
 * Key Vault (not included now, but could be added later): stores important information such as keys and endpoints in this project
 
-![image](https://github.com/user-attachments/assets/6a36ca9b-3817-4270-9cfe-ead5fd9f03af)
-
-
 ## Project Phases
 ![image](https://github.com/user-attachments/assets/95d544c2-ed0d-4cee-8eab-41635c6c6597)
 
