@@ -38,7 +38,7 @@ Clean, extract, and normalize the data from a data lake and data warehouse
 Normalize and index the data to enable efficient RAG (better data quality = better chatbot results).
 
 ### sample-app-aoai-chatGPT
-The web app was originally cloned from this Microsoft github repo called [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT). I then integrated keys, endpoints, and other necessary information found in the repo. My .env file has what variables I used (and read technical details for information on those variables), but feel free to add more from the .env.sample file in the Microsoft repo.
+The web app was originally cloned from this Microsoft github repo called [sample-app-aoai-chatGPT](https://github.com/microsoft/sample-app-aoai-chatGPT) and then integrated keys, endpoints, and other necessary information found in the repo. The .env file has specific variables used in this project (and read technical details for information on those variables), but feel free to add more from the .env.sample file in the Microsoft repo.
 
 ## Capstone Contributors
 * Ryan Cullen [@Ryan-UGA](https://github.com/Ryan-UGA)
